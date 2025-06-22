@@ -19,6 +19,7 @@
     "react-router-dom": "^7.6.0",
     "router-dom": "^3.0.3",
     "socket.io-client": "^4.8.1",
+    "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4.1.7"
   },
   "devDependencies": {

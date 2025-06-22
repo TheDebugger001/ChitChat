@@ -1,14 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
 import Sidebar_btn from './Sidebar_btn'
-import { FaHome } from 'react-icons/fa'
+import { FiHome } from 'react-icons/fi'
 import { FiLogOut } from 'react-icons/fi'
-import { FaPaperPlane } from 'react-icons/fa';
-import { FaPlayCircle } from 'react-icons/fa';
-import { FaSearch } from 'react-icons/fa'
-import { FaBell } from 'react-icons/fa'
-import { FaUser } from 'react-icons/fa'
+// import { FiPaperPlane } from 'react-icons/fi';
+import { FiPaperclip } from 'react-icons/fi'
+import { FiPlayCircle } from 'react-icons/fi';
+// import { FaSearch } from 'react-icons/fa'
+import { FiBell } from 'react-icons/fi'
+import { FiUser } from 'react-icons/fi'
 import { FiSettings } from 'react-icons/fi'
+import { FiSearch } from 'react-icons/fi'
 
 
 
@@ -21,42 +23,42 @@ const Sidebar = () => {
       <div className='w-full h-3/6 flex flex-col items-center gap-3 relative mt-10'>
         
         <Sidebar_btn
-        icon={<FaHome />}
+        icon={<FiHome />}
         label="Home" 
         onClick={() => setActive('home')} 
         active={active === 'home'}
         >
         </Sidebar_btn>
         <Sidebar_btn
-        icon={<FaSearch />}
+        icon={<FiSearch />}
         label="Search" 
         onClick={() => setActive('search')}
         active={active === 'search'}
         >
         </Sidebar_btn>
         <Sidebar_btn
-        icon={<FaPaperPlane />}
+        icon={<FiPaperclip />}
         label="Message" 
         onClick={() => setActive('dashboard')} 
         active={active === 'dashboard'}
         >
         </Sidebar_btn>
         <Sidebar_btn
-        icon={<FaPlayCircle />}
+        icon={<FiPlayCircle />}
         label="Post" 
         onClick={() => setActive('post')} 
         active={active === 'post'}
         >
         </Sidebar_btn>
         <Sidebar_btn
-        icon={<FaBell />}
+        icon={<FiBell />}
         label="Notification" 
         onClick={() => setActive('notification')} 
         active={active === 'notification'}
         >
         </Sidebar_btn>
         <Sidebar_btn
-        icon={<FaUser />}
+        icon={<FiUser />}
         label="Profile" 
         onClick={() => setActive('profile')} 
         active={active === 'profile'}
