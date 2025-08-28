@@ -4,6 +4,7 @@ import Sidebar_btn from './Sidebar_btn'
 import { FiHome } from 'react-icons/fi'
 import { FiLogOut } from 'react-icons/fi'
 // import { FiPaperPlane } from 'react-icons/fi';
+import { FiSend } from 'react-icons/fi';
 import { FiPaperclip } from 'react-icons/fi'
 import { FiPlayCircle } from 'react-icons/fi';
 // import { FaSearch } from 'react-icons/fa'
@@ -34,10 +35,11 @@ const Sidebar = () => {
         label="Search" 
         onClick={() => setActive('search')}
         active={active === 'search'}
+        page="/search"
         >
         </Sidebar_btn>
         <Sidebar_btn
-        icon={<FiPaperclip />}
+        icon={<FiSend />}
         label="Message" 
         onClick={() => setActive('dashboard')} 
         active={active === 'dashboard'}

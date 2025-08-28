@@ -27,7 +27,7 @@ const Navbar = () => {
       </div>
       <div className='w-2/13 h-full flex items-center justify-evenly'>
         <div
-        onClick={() => setFavorite(!favorite)} 
+        onClick={() => setFavorite(!favorite)}
         className={`w-2/12 h-6/12 bg-gray-600/10 rounded-full flex items-center justify-center text-xl text-gray-300 hover:bg-gray-600/40`}>
           {favorite == true ?
            <FaStar className='text-orange-500' /> :

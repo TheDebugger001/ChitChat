@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './components/pages/Login'
 import Home from './components/pages/Home'
 import MainLayout from './components/layouts/MainLayout'
+import { Search } from 'lucide-react'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
     <div className='w-full min-h-screen bg-gray-900'>
       <Router>
         <Routes>
+          <Route index element={ <Login /> } />
           <Route path="/sign_up" element={<Login />} />
     
           {/* The Navbar Route. It is the Main one */}

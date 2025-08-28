@@ -15,7 +15,7 @@ const Login = () => {
 
   return (
     <div className='w-full h-screen bg-gray-900 flex items-center justify-center'>
-      <div className='w-10/11 h-10/11 bg-gray-900 ring-1 ring-white/30 rounded-xl flex items-center justify-between overflow-hidden'>
+      <div className='w-8/11 h-9/11 bg-gray-900 ring-1 ring-white/30 rounded-xl flex items-center justify-between overflow-hidden'>
          {/* Image impletion for the users */}
          <div className='w-7/12 h-full bg-gray-700'>
             
@@ -28,7 +28,7 @@ const Login = () => {
             </div>
 
             <div className='w-full h-1/12 flex items-center justify-center'>
-               <p className='text-4xl font-semibold text-orange-500'>Create an account</p>
+               <p className='text-3xl font-semibold text-orange-500'>Create an account</p>
             </div>
 
             {/* The inputs */}
@@ -42,7 +42,7 @@ const Login = () => {
             </div>
 
             {/* The submitting button */}
-            <div className='w-full h-2/18'>
+            <div className='w-10/11 h-2/24'>
             <Button onClick={handleSignUp}>Sign Up</Button>
             </div>
 
@@ -52,9 +52,9 @@ const Login = () => {
                   <p className='text-gray-400 flex items-center'>-------- <span className='text-gray-200 text-sm'>-  Or Sign In with - </span> -------</p>
                </div>
 
-               <div className='w-full h-9/10 flex items-center justify-evenly'>
+               <div className='w-9/12 h-7/10 flex items-center justify-evenly'>
                   <With_Button>
-                  <img src="/images_with/google.png" alt="" className='w-10/12 h-11/12'/>
+                  <img src="/images_with/google.png" alt="" className='w-10/12 h-11/12 relative top-[.1em]'/>
                   </With_Button>
 
                   <With_Button>
@@ -62,14 +62,14 @@ const Login = () => {
                   </With_Button>
 
                   <With_Button>
-                  <img src="/images_with/facebook.png" alt="" className='w-10/12 h-11/12'/>
+                  <img src="/images_with/facebook.png" alt="" className='w-10/12 h-11/12 relative top-[.1em]'/>
                   </With_Button>
                </div>
             </div>
 
             {/* Already have an account. */}
             <div className='w-full h-1/20 flex items-center justify-center relative -top-[.8em]'>
-               <p className='font-sm text-gray-400'>Already have an account? <Link to="/login"     className='text-orange-500 font-medium hover:underline'>Login</Link>
+               <p className='font-sm text-gray-400'>Already have an account? <Link to="/login" className='text-orange-500 font-medium hover:underline'>Login</Link>
                </p>
             </div>
          </div>
